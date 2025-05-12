@@ -2,7 +2,7 @@
 
 > Application de gestion budgétaire personnelle pour enregistrer, suivre et optimiser vos finances.
 
----
+
 
 ## 🚀 Présentation
 
@@ -13,7 +13,7 @@
 - Définir ses **propres catégories**
 - Suivre ses dépenses pour mieux contrôler ses finances
 
----
+
 
 ## 🛠️ Technologies
 
@@ -34,7 +34,7 @@
 - Bootstrap / Tailwind CSS
 - HttpClient
 
----
+
 
 ## 🧑‍💻 Fonctionnalités principales
 
@@ -59,19 +59,17 @@
 - ✏️ Modifier une catégorie
 - ❌ Supprimer une catégorie
 
----
+
 
 ## 📸 Aperçu de l'interface (UI)
 
-> Conçue avec une approche **responsive**, claire et moderne.
 
 - 🎨 **UX optimisée** : Formulaires simples et validation en temps réel
 - 📱 **Mobile friendly** : Interface adaptative
 - 📈 **Visualisation claire** : Budgets & transactions bien organisés
 
-> *Ajoutez ici des captures d’écran (screenshots) de l’application.*
 
----
+
 
 ## ⚙️ Lancement du projet
 
@@ -79,7 +77,7 @@
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/votre-compte/budget-manager.git
+git clone https://github.com/MrRidadev/Budget-Manager-.git
 cd budget-manager/backend
 
 # Lancer l'application
@@ -94,3 +92,6 @@ Ce diagramme montre les interactions entre l’utilisateur et les principales fo
 
 ### 2. 🧱 Diagramme de classes
 ![img_1.png](img_1.png)
+
+### 3. 🔁 Diagramme de séquence (exemple : ajouter une transaction)
+![image.png](../../../Pictures/image.png)
