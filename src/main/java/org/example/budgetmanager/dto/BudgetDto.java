@@ -1,20 +1,14 @@
-package org.example.budgetmanager.model;
-
-import jakarta.persistence.*;
+package org.example.budgetmanager.dto;
 import lombok.*;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BudgetModel {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class BudgetDto {
     private Long id;
     private String category;
     private Double limitAmount;
     private Double spentAmount;
-
+    private Long userId;
 }
