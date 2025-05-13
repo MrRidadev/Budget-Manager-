@@ -31,7 +31,7 @@
 - Angular Router
 - Angular Forms (Template & Reactive)
 - RxJS
-- Bootstrap / Tailwind CSS
+- Bootstrap / CSS
 - HttpClient
 
 
@@ -94,4 +94,4 @@ Ce diagramme montre les interactions entre l’utilisateur et les principales fo
 ![img_1.png](img_1.png)
 
 ### 3. 🔁 Diagramme de séquence (exemple : ajouter une transaction)
-![image.png](../../../Pictures/image.png)
+![image.png](image.png)
