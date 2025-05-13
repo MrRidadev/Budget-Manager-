@@ -7,7 +7,7 @@
 
 **Budget Manager** est une application web complète permettant à un utilisateur de :
 
-- Gérer ses **transactions** (dépenses & revenus)
+- Gérer ses **transactionModels** (dépenses & revenus)
 - Créer des **budgets** par catégorie (logement, transport, etc.)
 - Définir ses **propres catégories**
 - Suivre ses dépenses pour mieux contrôler ses finances
@@ -35,10 +35,10 @@
 
 ## 🧑‍💻 Fonctionnalités principales
 
-### 🔄 Gestion des transactions
+### 🔄 Gestion des transactionModels
 
 - ➕ Ajouter une transaction (montant, date, description, catégorie)
-- 📋 Voir toutes les transactions
+- 📋 Voir toutes les transactionModels
 - ✏️ Modifier une transaction
 - ❌ Supprimer une transaction
 - 🔍 Filtrer / Trier par date, montant ou catégorie
@@ -62,7 +62,7 @@
 
 - 🎨 **UX optimisée** : Formulaires simples et validation en temps réel
 - 📱 **Mobile friendly** : Interface adaptative
-- 📈 **Visualisation claire** : Budgets & transactions bien organisés
+- 📈 **Visualisation claire** : Budgets & transactionModels bien organisés
 
 
 ## ⚙️ Lancement du projet

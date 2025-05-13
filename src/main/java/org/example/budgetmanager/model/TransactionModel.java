@@ -4,7 +4,8 @@ package org.example.budgetmanager.model;
 import jakarta.persistence.*;
 
 @Entity
-public class Transaction {
+@Table(name = "transactions_model")
+public class TransactionModel {
     @Id
     @GeneratedValue
     private int id;

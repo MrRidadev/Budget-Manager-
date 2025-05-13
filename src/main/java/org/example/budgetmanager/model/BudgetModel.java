@@ -2,7 +2,8 @@ package org.example.budgetmanager.model;
 
 
 import jakarta.persistence.*;
-import jakarta.transaction.Transaction;
+
+
 
 import java.util.List;
 
@@ -16,14 +17,14 @@ public class BudgetModel {
     private Double spentAmount;
 
     @OneToMany(mappedBy = "budget")
-    private List<Transaction> transactions;
+    private List<TransactionModel> transactionModels;
 
-    public List<Transaction> getTransactions() {
-        return transactions;
+    public List<TransactionModel> getTransactions() {
+        return transactionModels;
     }
 
-    public void setTransactions(List<Transaction> transactions) {
-        this.transactions = transactions;
+    public void setTransactions(List<TransactionModel> transactionModels) {
+        this.transactionModels = transactionModels;
     }
 
     public BudgetModel() {
