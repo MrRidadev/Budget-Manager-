@@ -1,7 +1,6 @@
 # 💰 Budget Manager
 
-> Application de gestion budgétaire personnelle pour enregistrer, suivre et optimiser vos finances.
-
+ Application de gestion budgétaire personnelle pour enregistrer, suivre et optimiser vos finances.
 
 
 ## 🚀 Présentation
@@ -12,7 +11,6 @@
 - Créer des **budgets** par catégorie (logement, transport, etc.)
 - Définir ses **propres catégories**
 - Suivre ses dépenses pour mieux contrôler ses finances
-
 
 
 ## 🛠️ Technologies
@@ -33,7 +31,6 @@
 - RxJS
 - Bootstrap / CSS
 - HttpClient
-
 
 
 ## 🧑‍💻 Fonctionnalités principales
@@ -60,15 +57,12 @@
 - ❌ Supprimer une catégorie
 
 
-
 ## 📸 Aperçu de l'interface (UI)
 
 
 - 🎨 **UX optimisée** : Formulaires simples et validation en temps réel
 - 📱 **Mobile friendly** : Interface adaptative
 - 📈 **Visualisation claire** : Budgets & transactions bien organisés
-
-
 
 
 ## ⚙️ Lancement du projet
@@ -90,8 +84,12 @@ Ce diagramme montre les interactions entre l’utilisateur et les principales fo
 
 ![img.png](img.png)
 
+
 ### 2. 🧱 Diagramme de classes
+
 ![img_1.png](img_1.png)
 
+
 ### 3. 🔁 Diagramme de séquence (exemple : ajouter une transaction)
+
 ![image.png](image.png)
