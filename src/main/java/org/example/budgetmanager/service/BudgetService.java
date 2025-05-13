@@ -4,21 +4,24 @@ import org.example.budgetmanager.dto.BudgetDto;
 import org.example.budgetmanager.model.BudgetModel;
 import org.example.budgetmanager.mapper.BudgetMapper;
 import org.example.budgetmanager.repository.BudgetRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
 public class BudgetService {
+
+    BudgetService(BudgetRepository budgetRepository,BudgetMapper budgetMapper){
+        this.budgetMapper = budgetMapper;
+        this.budgetRepository = budgetRepository;
+    }
 
     private final BudgetRepository budgetRepository;
     private final BudgetMapper budgetMapper;
 
-    public List<BudgetDto> getAllBudgets(Long userId) {
-        return budgetRepository.findByUserId(userId).stream()
+    public List<BudgetDto> getAllBudgets() {
+        return budgetRepository.findAll().stream()
                 .map(budgetMapper::toDto)
                 .collect(Collectors.toList());
     }

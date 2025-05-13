@@ -11,15 +11,17 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/budgets")
-@RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 public class BudgetController {
 
-    private final BudgetService budgetService;
+    BudgetController(BudgetService budgetService){
 
+        this.budgetService = budgetService;
+    };
+    private final BudgetService budgetService;
     @GetMapping("/{Id}")
-    public List<BudgetDto> getBudgets(@PathVariable Long Id) {
-        return budgetService.getAllBudgets(Id);
+    public List<BudgetDto> getBudgets() {
+        return budgetService.getAllBudgets();
     }
 
     @PostMapping("/add")
