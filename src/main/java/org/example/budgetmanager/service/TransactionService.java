@@ -6,6 +6,7 @@ import org.example.budgetmanager.repository.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 
 
 @Service
@@ -21,6 +22,10 @@ public class TransactionService {
     public TransactionModel addTransaction(TransactionModel transactionModel) {
        return transactionRepository.save(transactionModel);
 
+    }
+
+    public List<TransactionModel> getAllTransactions() {
+        return transactionRepository.findAll();
     }
 
 }
