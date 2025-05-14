@@ -15,7 +15,7 @@ public class BudgetModel {
     private String category;
     private Double limitAmount;
     private Double spentAmount;
-
+    
     @OneToMany(mappedBy = "budget")
     private List<TransactionModel> transactionModels;
 
