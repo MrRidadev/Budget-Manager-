@@ -18,7 +18,7 @@ public class Transaction {
 
     @ManyToOne
     @JoinColumn(name = "budget_id")
-    private BudgetModel budget;
+    private Budget budget;
 
 
     public int getId() {

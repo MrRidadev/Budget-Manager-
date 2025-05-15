@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-public class BudgetModel {
+public class Budget {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -27,7 +27,7 @@ public class BudgetModel {
         this.transactionModels = transactionModels;
     }
 
-    public BudgetModel() {
+    public Budget() {
     }
 
     public Long getId() {
