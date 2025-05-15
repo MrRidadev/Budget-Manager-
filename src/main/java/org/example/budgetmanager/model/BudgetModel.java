@@ -17,13 +17,13 @@ public class BudgetModel {
     private Double spentAmount;
     
     @OneToMany(mappedBy = "budget")
-    private List<TransactionModel> transactionModels;
+    private List<Transaction> transactionModels;
 
-    public List<TransactionModel> getTransactions() {
+    public List<Transaction> getTransactions() {
         return transactionModels;
     }
 
-    public void setTransactions(List<TransactionModel> transactionModels) {
+    public void setTransactions(List<Transaction> transactionModels) {
         this.transactionModels = transactionModels;
     }
 

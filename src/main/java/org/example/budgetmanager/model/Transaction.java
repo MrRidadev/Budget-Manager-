@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "transactions_model")
-public class TransactionModel {
+public class Transaction {
     @Id
     @GeneratedValue
     private int id;

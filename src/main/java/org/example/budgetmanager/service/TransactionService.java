@@ -1,7 +1,7 @@
 package org.example.budgetmanager.service;
 
 
-import org.example.budgetmanager.model.TransactionModel;
+import org.example.budgetmanager.model.Transaction;
 import org.example.budgetmanager.repository.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,13 +19,19 @@ public class TransactionService {
     }
 
 
-    public TransactionModel addTransaction(TransactionModel transactionModel) {
+    public Transaction addTransaction(Transaction transactionModel) {
        return transactionRepository.save(transactionModel);
 
     }
 
-    public List<TransactionModel> getAllTransactions() {
+    public List<Transaction> getAllTransactions() {
         return transactionRepository.findAll();
     }
+
+    public void deleteTransaction(Transaction transactionModel) {
+        transactionRepository.delete(transactionModel);
+    }
+
+
 
 }
