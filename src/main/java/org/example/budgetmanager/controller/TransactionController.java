@@ -27,9 +27,15 @@ public class TransactionController {
         return transactionService.getAllTransactions();
     }
 
-    @DeleteMapping("/delete")
-    public void deleteTransaction(@RequestBody Transaction transactionModel) {
-        transactionService.deleteTransaction(transactionModel);
+    @DeleteMapping("/delete/{id}")
+    public void deleteTransaction(@PathVariable long id) {
+        transactionService.deleteTransaction(id);
     }
+
+    @PutMapping("/update")
+    public void updateTransaction(@RequestBody Transaction transactionModel) {
+        transactionService.updateTransaction(transactionModel);
+    }
+
 }
 

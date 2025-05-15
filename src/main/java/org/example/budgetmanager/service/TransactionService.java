@@ -28,8 +28,8 @@ public class TransactionService {
         return transactionRepository.findAll();
     }
 
-    public void deleteTransaction(Transaction transactionModel) {
-        transactionRepository.delete(transactionModel);
+    public void deleteTransaction(long id) {
+        transactionRepository.deleteById(id);
     }
 
     public void updateTransaction(Transaction transactionModel) {
