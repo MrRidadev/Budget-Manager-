@@ -26,4 +26,10 @@ public class TransactionController {
     public List<Transaction> getAllTransactions() {
         return transactionService.getAllTransactions();
     }
+
+    @DeleteMapping("/delete")
+    public void deleteTransaction(@RequestBody Transaction transactionModel) {
+        transactionService.deleteTransaction(transactionModel);
+    }
 }
+
