@@ -16,7 +16,7 @@ public class Budget {
     private Double limitAmount;
     @Setter
     private Double spentAmount;
-
+    
     @OneToMany(mappedBy = "budget")
     private List<Transaction> transactionModels;
 
