@@ -4,12 +4,14 @@ import lombok.*;
 @Data
 @Getter
 @Setter
-@Builder
 public class BudgetDto {
     private Long id;
     private String category;
     private Double limitAmount;
     private Double spentAmount;
+
+    public BudgetDto() {
+    }
 
     public Long getId() {
         return id;

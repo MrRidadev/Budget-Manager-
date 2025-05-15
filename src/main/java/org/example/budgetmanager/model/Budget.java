@@ -2,18 +2,19 @@ package org.example.budgetmanager.model;
 
 
 import jakarta.persistence.*;
-
+import lombok.Setter;
 
 
 import java.util.List;
 
 @Entity
-public class BudgetModel {
+public class Budget {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String category;
     private Double limitAmount;
+    @Setter
     private Double spentAmount;
 
     @OneToMany(mappedBy = "budget")
@@ -27,7 +28,7 @@ public class BudgetModel {
         this.transactionModels = transactionModels;
     }
 
-    public BudgetModel() {
+    public Budget() {
     }
 
     public Long getId() {
@@ -58,7 +59,4 @@ public class BudgetModel {
         return spentAmount;
     }
 
-    public void setSpentAmount(Double spentAmount) {
-        this.spentAmount = spentAmount;
-    }
 }

@@ -1,13 +1,36 @@
 package org.example.budgetmanager.mapper;
 
-
-
 import org.example.budgetmanager.dto.BudgetDto;
-import org.example.budgetmanager.model.BudgetModel;
-import org.mapstruct.Mapper;
+import org.example.budgetmanager.model.Budget;
+import org.springframework.stereotype.Component;
 
-@Mapper(componentModel = "spring")
-public interface BudgetMapper {
-    BudgetDto toDto(BudgetModel budget);
-    BudgetModel toEntity(BudgetDto budgetDto);
+@Component
+public class BudgetMapper {
+
+    public BudgetDto toDto(Budget budget) {
+        if (budget == null) {
+            return null;
+        }
+
+        BudgetDto dto = new BudgetDto();
+        dto.setId(budget.getId());
+        dto.setCategory(budget.getCategory());
+        dto.setLimitAmount(budget.getLimitAmount());
+        dto.setSpentAmount(budget.getSpentAmount());
+        return dto;
+    }
+
+    public Budget toEntity(BudgetDto dto) {
+        if (dto == null) {
+            return null;
+        }
+
+        Budget budget = new Budget();
+        budget.setId(dto.getId());
+        budget.setCategory(dto.getCategory());
+        budget.setLimitAmount(dto.getLimitAmount());
+        budget.setSpentAmount(dto.getSpentAmount());
+        return budget;
+    }
 }
+
