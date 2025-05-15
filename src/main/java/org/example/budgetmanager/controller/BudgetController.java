@@ -3,11 +3,12 @@ package org.example.budgetmanager.controller;
 
 
 import org.example.budgetmanager.dto.BudgetDto;
+import org.example.budgetmanager.model.Budget;
 import org.example.budgetmanager.service.BudgetService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/budgets")
@@ -20,6 +21,10 @@ public class BudgetController {
     };
     private final BudgetService budgetService;
     @GetMapping("/{Id}")
+    public Optional<Budget> getBudgets(@PathVariable Long Id) {
+        return budgetService.getBudget(Id);
+    }
+    @GetMapping
     public List<BudgetDto> getBudgets() {
         return budgetService.getAllBudgets();
     }

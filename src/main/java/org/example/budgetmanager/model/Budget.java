@@ -2,7 +2,7 @@ package org.example.budgetmanager.model;
 
 
 import jakarta.persistence.*;
-
+import lombok.Setter;
 
 
 import java.util.List;
@@ -14,6 +14,7 @@ public class Budget {
     private Long id;
     private String category;
     private Double limitAmount;
+    @Setter
     private Double spentAmount;
     
     @OneToMany(mappedBy = "budget")
@@ -58,7 +59,4 @@ public class Budget {
         return spentAmount;
     }
 
-    public void setSpentAmount(Double spentAmount) {
-        this.spentAmount = spentAmount;
-    }
 }
