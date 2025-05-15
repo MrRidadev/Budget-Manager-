@@ -32,6 +32,8 @@ public class TransactionService {
         transactionRepository.delete(transactionModel);
     }
 
-
+    public void updateTransaction(Transaction transactionModel) {
+        transactionRepository.save(transactionModel);
+    }
 
 }
